@@ -1,37 +1,38 @@
-@use "../../variables" as * ;
+@use "../../variables.scss" as * ;
 
-.btn-b1{
+.button{
     align-items : center;
-    color : #ffffff;
-    background : #000000;
+    color : $white;
+    background : $black;
     width : 200px;
     height : 50px;
-    top : 20px;
-    left : 20px;
     padding : 0px 16px;
     transition : 0.2s;
-}
-.btn-b1:hover{
+
+    &:hover{
     transition : 0.2s;
-    background-color:#442606;
-    border : #442606;
-}
-@media (min-width : 768px){
-    .btn-b1{
-        width : 150px;
-        height : 55px;
-        top : 254px;
-        left : 20px;
-        padding : 0px 16px;
-    }
-}
-@media (min-width : 992px){
-    .btn-b1{
-        width : 180px;
-        height : 45px;
-        top : 488px;
-        left : 20px;
-        padding : 0px 16px;
+    background-color:$orange_bistre;
+
+        @media (max-width : $breakpoint-md){
+            .button{
+                width : 150px;
+                height : 55px;
+                top : 254px;
+                left : 20px;
+                padding : 0px 16px;
+    
+
+                @media (max-width : $breakpoint-lg){
+                    .button{
+                        width : 180px;
+                        height : 45px;  
+                        top : 488px;
+                        left : 20px;
+                        padding : 0px 16px;
+                    }
+                }
+            }
+        }
     }
 }
 
