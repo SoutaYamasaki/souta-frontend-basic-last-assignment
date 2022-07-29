@@ -1,0 +1,36 @@
+@use "../../variables.scss" as * ;
+
+.button{
+    align-items : center;
+    color : $white;
+    background : $black;
+    width : 200px;
+    height : 50px;
+    padding : 0px 16px;
+    transition : 0.2s;
+
+    &:hover{
+        transition : 0.2s;
+        background-color : $orange_bistre;
+    }
+}
+
+@media (max-width : $breakpoint-md){
+    .button{
+        width : 150px;
+        height : 55px;
+        top : 254px;
+        left : 20px;
+        padding : 0px 16px;
+    }
+}
+
+@media (max-width : $breakpoint-lg){
+    .button{
+        width : 180px;
+        height : 45px;
+        top : 488px;
+        left : 20px;
+        padding : 0px 16px;
+    }
+}
