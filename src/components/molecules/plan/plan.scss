@@ -11,16 +11,19 @@
   .body {
     background-color: $gray_desertStorm;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 24px;
     border: 1px solid $gray_gainsboro;
-    .yen {
-      font-size: $fontsize-l;
-    }
+
     .price {
       color: $orange_bistre;
       font-size: $fontsize-xxl;
+      .yen {
+        font-size: $fontsize-l;
+        margin-right: 4px;
+      }
       .memo {
         display: flex;
         color: $black;
@@ -48,6 +51,9 @@
         border-bottom: 1px solid $gray_gainsboro;
       }
     }
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
   }
   &:nth-child(odd) {
     .text {
