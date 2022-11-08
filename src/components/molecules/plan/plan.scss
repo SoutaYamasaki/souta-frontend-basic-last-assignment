@@ -20,17 +20,20 @@
     .price {
       color: $orange_bistre;
       font-size: $fontsize-xxl;
+      font-weight: 700;
       .yen {
         font-size: $fontsize-l;
         margin-right: 4px;
       }
-      .memo {
-        display: flex;
-        color: $black;
-        font-weight: normal;
-        font-size: $fontsize-s;
-        justify-content: center;
-      }
+    }
+    .memo {
+      display: flex;
+      color: $black;
+      font-weight: normal;
+      font-size: $fontsize-s;
+      justify-content: center;
+      margin: 0;
+      font-weight: 400;
     }
   }
   .list {
