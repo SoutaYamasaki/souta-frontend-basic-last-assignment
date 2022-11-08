@@ -9,7 +9,6 @@
   @media (min-width: $breakpoint-md) {
     margin-bottom: 0;
   }
-  
 
   .news-list {
     display: flex;
@@ -34,18 +33,18 @@
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
-          padding:20px;
-          
-          & > h3 {
+          padding: 20px;
+
+          & > .report {
             color: $black;
             font-size: $fontsize-m;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             width: 100%;
-            margin:0;
+            margin: 0;
             line-height: 23px;
-            &:hover{
+            &:hover {
               color: $orange_bistre;
             }
           }
@@ -56,10 +55,10 @@
       }
     }
   }
-  .news-and-events-more{
+  .news-and-events-more {
     margin: 0;
   }
-  time{
+  time {
     line-height: 12px;
     color: $gray_nobel;
     font-size: $fontsize-xs;
