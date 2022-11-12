@@ -16,6 +16,8 @@
     align-items: center;
     padding: 24px;
     border: 1px solid $gray_gainsboro;
+    margin: 0;
+    border-bottom: none;
 
     .price {
       color: $orange_bistre;
