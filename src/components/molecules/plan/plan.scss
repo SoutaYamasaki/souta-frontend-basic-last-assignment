@@ -8,7 +8,7 @@
     font-size: $fontsize-l;
     font-weight: 700;
   }
-  .body {
+  .plan-body {
     background-color: $gray_desertStorm;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,6 @@
       }
     }
     .memo {
-      display: flex;
       color: $black;
       font-weight: normal;
       font-size: $fontsize-s;
@@ -39,11 +38,12 @@
     }
   }
   .list {
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     text-decoration-color: $gray_desertStorm;
     text-align: center;
-    .start {
+    padding: 0;
+    margin: 0;
+    .item {
       display: flex;
       justify-content: center;
       align-items: center;
