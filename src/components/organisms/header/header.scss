@@ -1,0 +1,82 @@
+@use "../../variables" as *;
+
+.navbar {
+  background-color: $black;
+  width: auto;
+  height: 60px;
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    width: auto;
+    padding: 0 30px;
+    height: 90px;
+
+    .nav-item.dropdown {
+      .dropdown-menu.concept-dropdown {
+        display: none;
+      }
+      &:hover {
+        .dropdown-menu.concept-dropdown {
+          display: block;
+        }
+      }
+    }
+    .plus-button {
+      display: none;
+    }
+  }
+
+  .collapse.navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url(../../../img/humberger-bar.svg);
+  }
+
+  .switch {
+    width: 120px;
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 140px;
+    }
+  }
+  .dropdown-menu.concept-dropdown {
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    @media screen and (min-width: $breakpoint-xl) {
+      display: none;
+    }
+  }
+  .dropdown-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-link {
+    color: $white;
+    padding: 0;
+  }
+  .dropdown-item {
+    background-color: $black;
+    color: $white;
+    padding: 18px;
+    width: auto;
+  }
+  .nav-item {
+    padding: 15px 0px;
+  }
+}
