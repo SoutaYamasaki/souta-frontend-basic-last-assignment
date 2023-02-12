@@ -75,8 +75,14 @@
     color: $white;
     padding: 18px;
     width: auto;
+    transition: 0.2s ease;
+    &:hover {
+      color: $white;
+      background-color: $orange_bistre;
+      text-decoration-line: none;
+    }
   }
   .nav-item {
-    padding: 15px 0px;
+    padding: 15px 20px;
   }
 }
