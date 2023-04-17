@@ -30,6 +30,10 @@
     justify-content: flex-end;
   }
 
+  .plus-button {
+    margin-right: 16px;
+  }
+
   .navbar-toggler-icon {
     background-image: url(../../../img/humberger-bar.svg);
   }
@@ -40,6 +44,9 @@
     @media screen and (min-width: $breakpoint-xl) {
       width: 140px;
     }
+  }
+  .navbar-brand {
+    margin-bottom: 12px;
   }
   .dropdown-menu.concept-dropdown {
     padding: 0;
@@ -68,15 +75,23 @@
   }
   .nav-link {
     color: $white;
+    margin: 16px 15px;
     padding: 0;
-    padding: 18px;
+    @media screen and (min-width: $breakpoint-xl) {
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+  }
+  .navbar-nav {
+    width: auto;
   }
   .dropdown-item {
     background-color: $black;
     color: $white;
     padding: 18px;
-    width: auto;
+
     transition: 0.2s ease;
+
     &:hover {
       color: $white;
       background-color: $orange_bistre;
@@ -84,6 +99,9 @@
     }
   }
   .nav-item {
-    padding: 15px 20px;
+    width: auto;
+    @media (max-width: $breakpoint-xl) {
+      background-color: $black;
+    }
   }
 }
