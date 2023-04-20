@@ -3,7 +3,6 @@
 .navbar {
   background-color: $black;
   width: auto;
-  height: 60px;
 
   @media screen and (min-width: $breakpoint-xl) {
     background-color: $black_50;
@@ -75,11 +74,15 @@
   }
   .nav-link {
     color: $white;
-    margin: 16px 15px;
+    margin: 15px 0;
     padding: 0;
     @media screen and (min-width: $breakpoint-xl) {
       padding: 18px;
       margin-bottom: 14px;
+      &:hover {
+        color: $gray_nobel;
+        text-decoration-line: none;
+      }
     }
   }
   .navbar-nav {
@@ -88,18 +91,20 @@
   .dropdown-item {
     background-color: $black;
     color: $white;
-    padding: 18px;
-
+    padding: 15px 12px;
     transition: 0.2s ease;
-
-    &:hover {
-      color: $white;
-      background-color: $orange_bistre;
-      text-decoration-line: none;
+    @media (min-width: $breakpoint-xl) {
+      padding: 18px;
+      &:hover {
+        color: $white;
+        background-color: $orange_bistre;
+        text-decoration-line: none;
+      }
     }
   }
   .nav-item {
     width: auto;
+    text-align: left;
     @media (max-width: $breakpoint-xl) {
       background-color: $black;
     }
